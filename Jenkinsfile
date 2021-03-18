@@ -54,7 +54,7 @@ pipeline{
                   sh 'mvn package'
               }
           }
-          stage('Package'){
+          stage('Deploy'){
               agent any
               steps{
                   sh 'rm -rf mydockerfile
